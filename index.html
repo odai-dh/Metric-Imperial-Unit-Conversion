@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz Game</title>
+</head>
+<body>
+  <header class="number-contaner">
+    <h1>Metric/Imperial Unit Conversion</h1>
+    <input type="text" id="input-el" placeholder="0" onkeypress="return /[0-9]/i.test(event.key)" autocomplete="off" maxlength="3">
+    <button id="convert-btn">Convert</button>
+  </header>
+  <main>
+    <div class="result-container">
+      <section class="value">
+        <h2>Length (Meter/Feet)</h2>
+        <p id="length-el" ></p>
+      </section>
+      <section class="value">
+        <h2>Volume (Liter/Gallons)</h2>
+        <p id="volume-el"></p>
+      </section>
+      <section class="value">
+        <h2>Mass (Kilograms/Pounds)</h2>
+        <p id="mass-el"></p>
+      </section>
+    </div>
+  </main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
